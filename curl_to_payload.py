@@ -10,7 +10,8 @@ def curl_to_payload(curl_command: str) -> dict:
     :return: A payload dictionary.
     """
     payload = {}
-    payload_string = curl_command[curl_command.find("--data-raw '") + len("--data-raw '"):]
+    payload_string = curl_command[curl_command.find(
+        "--data-raw '") + len("--data-raw '"):]
     payload_string = payload_string[:payload_string.find("'")]
     for key_value in payload_string.split("&"):
         _ = key_value.split("=")
@@ -31,7 +32,7 @@ def curl_to_payload(curl_command: str) -> dict:
 if __name__ == '__main__':
     with open('curl.txt', 'r') as infile:
         curl_command = infile.read()
-    
+
     payload = curl_to_payload(curl_command)
 
     with open('payload.json', 'w') as outfile:
