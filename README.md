@@ -9,7 +9,7 @@ To use this script, follow these steps:
 1. **Clone the repository:**
 
     ```sh
-    git clone git@github.com:SpaceShaman/curl_to_payload.git
+    git clone git@github.com:SpaceShaman/curl-to-payload.git
     cd curl-to-payload-converter
     ```
 
