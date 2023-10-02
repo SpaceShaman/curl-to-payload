@@ -2,3 +2,4 @@
 **/.sourcery.yaml
 **.egg-info
 **/build
+**/__pycache__
