@@ -36,5 +36,3 @@ if __name__ == '__main__':
 
     with open('payload.json', 'w') as outfile:
         json.dump(payload, outfile)
-
-    print(payload["__VIEWSTATE"])
