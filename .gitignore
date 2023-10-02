@@ -1,3 +1,4 @@
-payload.json
-curl.txt
-.sourcery.yaml
+**/payload.json
+**/.sourcery.yaml
+**.egg-info
+**/build
